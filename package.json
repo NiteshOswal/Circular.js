@@ -1,0 +1,28 @@
+{
+  "name": "circular.js",
+  "version": "1.0.0",
+  "description": "A tiny utility to stringify [Circular] objects on Client & on Server",
+  "main": "circular.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://niteshoswal@github.com/NiteshOswal/Circular.js.git"
+  },
+  "keywords": [
+    "JSON",
+    "stringify",
+    "circular",
+    "amd",
+    "node",
+    "objects",
+    "light-weight"
+  ],
+  "author": "Nitesh Oswal",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/NiteshOswal/Circular.js/issues"
+  },
+  "homepage": "https://github.com/NiteshOswal/Circular.js#readme"
+}
