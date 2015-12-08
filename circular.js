@@ -1,3 +1,4 @@
+
 /**
  * The wrapper which allows the module to work in different environment, CommonJS-like envs like Node, AMD loaders such as Require.js, and ofcourse can be used globally in browser
  * @param  {function} scope   The scope or the root, it is the environment we're going to glue our logic to
@@ -16,13 +17,23 @@
         //for Node
         module.exports = utility;
     } else {
-        //for browsers :heart:
+        //for the browsers
         scope.circular = utility;
     }
 
     this.circular = utility;
 
-})(this, function(ref, options) {
+})(this, 
+/**
+ * Circular replacer int it's utmost glory
+ * @param  {string|object} ref     The alternative replacer text for a circular object
+ * @param  {object} options        Options for the 
+ * @return {mixed}                 Returns the value
+ */ 
+function(ref, options) {
+
+    const VERSION = "1.0.0";
+    const AUTHOR = "Nitesh Oswal"; //for the lols..
 
     if(typeof ref === "object" || typeof ref === "undefined") {
         options = ref || {};
@@ -32,14 +43,14 @@
     var defaults = {
         stringifyFunctions: true, //do you want to stringify functions, I really don't know why, but I don't wanna
         keep: [], //much like the replacer's already known functionality, of filtering objects using arrays
-        discard: []
+        discard: [] //yoo, just in case we need to discard something
     };
 
     //Extend defaults with options
     if(typeof Object.assign === "function") { //needs ES6, why not!
         defaults = Object.assign(defaults, options); 
     } else { //fallback -_- didn't wanted the ES6 polyfill, just for my use case
-        for(option in options) { //copy options into defaults
+        for(option in options) { //copy options into options
             defaults[option] = options[option];
         }
     }
