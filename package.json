@@ -1,6 +1,6 @@
 {
   "name": "circular.js",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "A tiny utility to stringify [Circular] objects on Client & on Server",
   "main": "circular.js",
   "scripts": {
@@ -19,17 +19,12 @@
     "objects",
     "light-weight"
   ],
-  "author": {
-    "name": "Nitesh Oswal"
-  },
+  "author": "Nitesh Oswal",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/NiteshOswal/Circular.js/issues"
   },
   "homepage": "https://github.com/NiteshOswal/Circular.js#readme",
-  "gitHead": "c3af5d96d0907fdc17005feb2ca5fd80fc7ccb06",
-  "readme": "ERROR: No README data found!",
-  "_id": "circular.js@1.0.0",
   "_shasum": "518891a577f1acb636312b9062d174372cbd968c",
   "_from": "circular.js@*"
 }
