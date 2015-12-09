@@ -32,7 +32,7 @@
  */ 
 function(ref, options) {
 
-    const VERSION = "1.0.0";
+    const VERSION = "2.0.2";
     const AUTHOR = "Nitesh Oswal"; //for the lols..
 
     if(typeof ref === "object" || typeof ref === "undefined") {

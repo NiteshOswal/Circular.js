@@ -1,6 +1,6 @@
 {
   "name": "circular.js",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "A tiny utility to stringify [Circular] objects on Client & on Server",
   "main": "circular.js",
   "scripts": {
